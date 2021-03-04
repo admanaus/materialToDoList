@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IListItem } from './list-item.interface'
 
 @Component({
   selector: 'app-main-body',
@@ -13,10 +14,10 @@ export class MainBodyComponent implements OnInit {
   }
 
   checked: Boolean = false;
-  toDoList: Array<String> = 
-  [ "Go to work",
-    "Watch Modern Family",
-    "Pet the cat",
-    "Cry myself to sleep"]
+  toDoList: Array<IListItem> = 
+  [ {description: "Go to work", isComplete: false},
+    {description: "Watch Modern Family", isComplete: true},
+    {description: "Pet the cat", isComplete: true},
+    {description: "Go to bed early", isComplete: false}]
 
 }

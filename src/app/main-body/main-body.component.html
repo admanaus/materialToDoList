@@ -12,7 +12,12 @@
         <mat-list role="list">
             <mat-divider></mat-divider>
             <div *ngFor="let item of toDoList">
-                <mat-list-item role="listitem" >{{item}}</mat-list-item>
+                <mat-list-item role="listitem" >
+                    <mat-icon aria-hidden="false" aria-label="done icon" *ngIf="item.isComplete">done</mat-icon>
+                    <div class="iconSpacer" *ngIf="!item.isComplete"></div>
+                    <div class="iconSpacer"></div>
+                    {{item.description}}
+                </mat-list-item>
                 <mat-divider></mat-divider>
             </div>
         </mat-list>
