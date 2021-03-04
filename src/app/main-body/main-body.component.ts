@@ -12,4 +12,6 @@ export class MainBodyComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  checked = false;
+
 }
