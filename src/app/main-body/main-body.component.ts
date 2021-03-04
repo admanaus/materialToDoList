@@ -18,6 +18,6 @@ export class MainBodyComponent implements OnInit {
   [ {description: "Go to work", isComplete: false},
     {description: "Watch Modern Family", isComplete: true},
     {description: "Pet the cat", isComplete: true},
-    {description: "Go to bed early", isComplete: false}]
+    {description: "Go to bed early", isComplete: false}];
 
 }

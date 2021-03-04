@@ -10,7 +10,7 @@
     <mat-card-content *ngIf="checked" >
         <h2 class="example-h2">Today's list:</h2>
         <mat-list role="list">
-            <mat-divider></mat-divider>
+            <mat-divider *ngIf="toDoList.length"></mat-divider>
             <div *ngFor="let item of toDoList">
                 <mat-list-item role="listitem" >
                     <mat-icon aria-hidden="false" aria-label="done icon" *ngIf="item.isComplete">done</mat-icon>
