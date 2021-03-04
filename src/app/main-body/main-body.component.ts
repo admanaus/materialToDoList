@@ -12,6 +12,11 @@ export class MainBodyComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  checked = false;
+  checked: Boolean = false;
+  toDoList: Array<String> = 
+  [ "Got to work", 
+    "Watch Modern Family",
+    "Pet the cat",
+    "Cry myself to sleep"]
 
 }

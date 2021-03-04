@@ -12,6 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
+import {MatListModule} from '@angular/material/list'
 
 
 
@@ -30,7 +31,8 @@ import { FormsModule } from '@angular/forms';
     MatButtonModule,
     MatCardModule,
     MatCheckboxModule,
-    FormsModule
+    FormsModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
