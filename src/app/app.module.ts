@@ -13,6 +13,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 import {MatListModule} from '@angular/material/list'
+import {MatDividerModule} from '@angular/material/divider';
+
 
 
 
@@ -32,7 +34,8 @@ import {MatListModule} from '@angular/material/list'
     MatCardModule,
     MatCheckboxModule,
     FormsModule,
-    MatListModule
+    MatListModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
