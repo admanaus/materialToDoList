@@ -14,7 +14,7 @@ export class MainBodyComponent implements OnInit {
 
   checked: Boolean = false;
   toDoList: Array<String> = 
-  [ "Got to work", 
+  [ "Go to work",
     "Watch Modern Family",
     "Pet the cat",
     "Cry myself to sleep"]
