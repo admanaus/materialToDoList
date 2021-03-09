@@ -1,13 +1,25 @@
 <mat-toolbar>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
+    <button 
+      mat-icon-button class="example-icon" 
+      aria-label="Example icon-button with menu icon"
+      routerLink="/main"
+      routerLinkActive="true">
+      <mat-icon>home</mat-icon>
     </button>
     <span>Just Do It!</span>
     <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <button 
+    mat-icon-button class="example-icon favorite-icon" 
+    aria-label="Example icon-button with heart icon"
+    routerLink="/loveit"
+    routerLinkActive="true">
       <mat-icon>favorite</mat-icon>
     </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <button 
+      mat-icon-button class="example-icon" 
+      aria-label="Example icon-button with share icon"
+      routerLink="/share" 
+      routerLinkActive="active">
       <mat-icon>share</mat-icon>
     </button>
 </mat-toolbar>

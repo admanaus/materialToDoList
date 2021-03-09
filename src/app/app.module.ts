@@ -14,17 +14,27 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 import {MatListModule} from '@angular/material/list'
 import {MatDividerModule} from '@angular/material/divider';
+import { ShareComponent } from './share/share.component';
+import { RouterModule, Routes } from '@angular/router';
+import { LoveItComponent } from './love-it/love-it.component';
 
 
-
+const routes: Routes = [
+  { path: 'share', component: ShareComponent },
+  { path: 'main', component: MainBodyComponent },
+  { path: 'loveit', component: LoveItComponent}
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolBarComponent,
-    MainBodyComponent
+    MainBodyComponent,
+    ShareComponent,
+    LoveItComponent
   ],
   imports: [
+    RouterModule.forRoot(routes),
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -37,6 +47,7 @@ import {MatDividerModule} from '@angular/material/divider';
     MatListModule,
     MatDividerModule
   ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
