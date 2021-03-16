@@ -20,7 +20,18 @@
                         <div class="iconSpacer" *ngIf="!item.isComplete"></div>
                         <div class="iconSpacer"></div>
                         {{item.description}}
+                        <div class="floatRight">
+                            <button
+                            mat-icon-button class="example-icon favorite-icon" 
+                            aria-label="Example icon-button with heart icon"
+                            [class.selected]="item === selectedItem"
+                            (click)="onSelect(item)">
+                            <mat-icon>mode</mat-icon>
+                          </button>
+                        </div>
+
                     </mat-list-item>
+
                     <mat-divider></mat-divider>
                 </div>
             </mat-list>

@@ -1,3 +1,8 @@
 .iconSpacer {
     width: 24px;
 }
+
+.floatRight{
+    position: absolute; 
+    right: 0;
+}
