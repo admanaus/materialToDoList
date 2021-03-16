@@ -24,7 +24,8 @@ import { ItemDetailComponent } from './item-detail/item-detail.component';
 const routes: Routes = [
   { path: 'share', component: ShareComponent },
   { path: 'main', component: MainBodyComponent },
-  { path: 'loveit', component: LoveItComponent}
+  { path: 'loveit', component: LoveItComponent},
+  { path: '**', component: MainBodyComponent}
 ];
 
 @NgModule({

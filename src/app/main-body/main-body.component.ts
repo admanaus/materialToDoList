@@ -8,6 +8,7 @@ import { IListItem } from './list-item.interface'
 })
 export class MainBodyComponent implements OnInit {
 
+  displayList: Boolean = true;
   selectedItem: IListItem | undefined;
 
   constructor() { }
@@ -24,7 +25,6 @@ export class MainBodyComponent implements OnInit {
     this.selectedItem = undefined;
   }
 
-  checked: Boolean = false;
   toDoList: Array<IListItem> = 
   [ {description: "Go to work", isComplete: false},
     {description: "Watch Modern Family", isComplete: true},

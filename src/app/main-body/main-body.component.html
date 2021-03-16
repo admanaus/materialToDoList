@@ -4,11 +4,11 @@
           <h2 class="example-h2">Checkbox clever text</h2>
       
           <section class="example-section">
-            <mat-checkbox class="example-margin" [(ngModel)]="checked">Display to-do list</mat-checkbox>
+            <mat-checkbox class="example-margin" [(ngModel)]="displayList">Display to-do list</mat-checkbox>
           </section>
       
         </mat-card-content>
-        <mat-card-content *ngIf="checked" >
+        <mat-card-content *ngIf="displayList" >
             <h2 class="example-h2">Today's list:</h2>
             <mat-list role="list">
                 <mat-divider *ngIf="toDoList.length"></mat-divider>
