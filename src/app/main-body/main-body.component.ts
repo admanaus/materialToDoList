@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter } from '@angular/core';
 import { IListItem } from './list-item.interface'
 
 @Component({
@@ -8,9 +8,20 @@ import { IListItem } from './list-item.interface'
 })
 export class MainBodyComponent implements OnInit {
 
+  selectedItem: IListItem | undefined;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSelect(item: IListItem): void {
+    this.selectedItem = item;
+  }
+
+  onDone($event: any) {
+    console.log("done with: ", $event);
+    this.selectedItem = undefined;
   }
 
   checked: Boolean = false;

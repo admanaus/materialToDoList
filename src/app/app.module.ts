@@ -14,9 +14,11 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 import {MatListModule} from '@angular/material/list'
 import {MatDividerModule} from '@angular/material/divider';
+import {MatFormFieldModule, MatFormField} from '@angular/material/form-field';
 import { ShareComponent } from './share/share.component';
 import { RouterModule, Routes } from '@angular/router';
 import { LoveItComponent } from './love-it/love-it.component';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
 
 
 const routes: Routes = [
@@ -31,7 +33,8 @@ const routes: Routes = [
     ToolBarComponent,
     MainBodyComponent,
     ShareComponent,
-    LoveItComponent
+    LoveItComponent,
+    ItemDetailComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
@@ -43,6 +46,7 @@ const routes: Routes = [
     MatButtonModule,
     MatCardModule,
     MatCheckboxModule,
+    MatFormFieldModule,
     FormsModule,
     MatListModule,
     MatDividerModule

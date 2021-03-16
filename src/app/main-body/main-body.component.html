@@ -12,7 +12,9 @@
             <h2 class="example-h2">Today's list:</h2>
             <mat-list role="list">
                 <mat-divider *ngIf="toDoList.length"></mat-divider>
-                <div *ngFor="let item of toDoList">
+                <div *ngFor="let item of toDoList"
+                [class.selected]="item === selectedItem"
+                (click)="onSelect(item)">
                     <mat-list-item role="listitem" >
                         <mat-icon aria-hidden="false" aria-label="done icon" *ngIf="item.isComplete">done</mat-icon>
                         <div class="iconSpacer" *ngIf="!item.isComplete"></div>
@@ -25,6 +27,7 @@
         </mat-card-content>
     </mat-card>  
 </div>
+<app-item-detail [item]="selectedItem" (done)="onDone($event)"></app-item-detail>
 
 
 
